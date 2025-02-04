@@ -31,6 +31,19 @@ define Package/amule
 	+libupnp +libbfd +libcryptopp
 endef
 
+define Download/AmuleWebUI
+  URL:=https://github.com/MatteoRagni/AmuleWebUI-Reloaded/archive
+  URL_FILE:=master.zip
+  FILE:=AmuleWebUI.zip
+  HASH:=skip
+endef
+
+define Build/Prepare
+	$(call Build/Prepare/Default)
+	unzip $(DL_DIR)/AmuleWebUI.zip -d $(PKG_BUILD_DIR)
+	
+endef
+
 CONFIGURE_ARGS+= \
 	--disable-nls \
 	--disable-static \
