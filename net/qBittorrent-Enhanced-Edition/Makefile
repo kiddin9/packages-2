@@ -27,7 +27,6 @@ define Package/qbittorrent-enhanced-edition
   URL:=https://github.com/c0re100/qBittorrent-Enhanced-Edition
   DEPENDS:=+libtorrent-rasterbar +libQt6Core +libQt6Network +libQt6Sql \
     +libQt6Xml +qt6-plugin-libqopensslbackend +qt6-plugin-libqsqlite
-  CONFLICTS:=qbittorrent
 endef
 
 define Package/qbittorrent-enhanced-edition/description
