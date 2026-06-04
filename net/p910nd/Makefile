@@ -28,6 +28,7 @@ define Package/p910nd
   SUBMENU:=Printing
   TITLE:=A small non-spooling printer server
   URL:=https://github.com/kenyapcomau/p910nd
+  DEPENDS:=+kmod-usb-printer
   USERID:=p910nd=393:lp=7
 endef
 
